@@ -10,8 +10,9 @@ nav:
 theme:
   name: material
 
+site_name: 'Corpusim Docs'
 repo_url: 'https://github.com/Corpusim/corpusim-docs'
-repo_name: 'Corpusim Docs Repo'
+repo_name: ' corpusim-docs'
 
 
 markdown_extensions:
