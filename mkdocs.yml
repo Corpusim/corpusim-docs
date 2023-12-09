@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: Corpusim Docs
+
+
+nav:
+    - Home: index.md
+    - About: design_and_architecture.md
+
+repo_url: 'https://github.com/Corpusim/corpusim-docs'
+repo_name: 'Corpusim Docs Repo'
