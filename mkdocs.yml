@@ -3,7 +3,20 @@ site_name: Corpusim Docs
 
 nav:
     - Home: index.md
-    - About: design_and_architecture.md
+    - Getting Started : getting-started.md
+    - Design and Architecture: design_and_architecture.md
+    - Roadmap : roadmap.md
+
+theme:
+  name: material
 
 repo_url: 'https://github.com/Corpusim/corpusim-docs'
 repo_name: 'Corpusim Docs Repo'
+
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
