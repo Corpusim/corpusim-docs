@@ -1,18 +1,29 @@
-site_name: Corpusim Docs
-
-
 nav:
     - Home: index.md
-    - Getting Started : getting-started.md
-    - Design and Architecture: design_and_architecture.md
-    - Roadmap : roadmap.md
+    - Getting Started : getting_started.md
+    - 'Contributors':
+      - 'About Contributors' : 'contributors/about_contributors.md'
+      - 'Tools and Processes' : 'contributors/tools_and_processes.md'
+    - Roadmaps : roadmaps.md
+    - 'Software Reference':
+      - 'Design and Architecture' : 'software_reference/design_and_architecture.md'
+      - 'Graphics Engine' : 'software_reference/graphics_engine.md'
 
 theme:
   name: material
+  logo: 'images/Logo_W.png'
+  palette:
+    scheme: slate
+    primary: brown
+    accent: deep_orange
 
+site_name: 'Corpusim Docs'
 repo_url: 'https://github.com/Corpusim/corpusim-docs'
 repo_name: 'Corpusim Docs Repo'
 site_url: https://docs.corpusim.com
+
+plugins:
+ - git-revision-date
 
 markdown_extensions:
   - pymdownx.superfences:

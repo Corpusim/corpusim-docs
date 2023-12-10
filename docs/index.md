@@ -1,4 +1,4 @@
-# Corpusim
+# Corpusim Docs
 
 Corpusim is a Flight Simulator for the Human Body. The mission of Corpusim is assist in the elimination of disease. 
 
@@ -8,12 +8,11 @@ The Corpusim project is about an open source ecosystem of mission-aligned contri
 
 This documentation will help you use and build on Corpusim, the software. 
 
-- [Getting Started](getting-started.md)
-- Corpusim's [Design and Architecture](design_and_architecture.md)
-- Corpusim's [Roadmap](roadmap.md)
+- [Getting Started](getting_started.md)
+- Corpusim's [Design and Architecture](software_reference/design_and_architecture.md)
+- Corpusim's [roadmaps](roadmaps.md)
 
 
 
-The source for these docs is on [GitHub](https://github.com/Corpusim/corpusim-docs).
+The source repository for Corpusim Docs is on [GitHub](https://github.com/Corpusim/corpusim-docs).
 
-Updated 2023-12-08
