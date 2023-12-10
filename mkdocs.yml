@@ -12,8 +12,8 @@ theme:
 
 site_name: 'Corpusim Docs'
 repo_url: 'https://github.com/Corpusim/corpusim-docs'
-repo_name: ' corpusim-docs'
-
+repo_name: 'Corpusim Docs Repo'
+site_url: https://docs.corpusim.com
 
 markdown_extensions:
   - pymdownx.superfences:
