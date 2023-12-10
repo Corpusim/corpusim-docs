@@ -1,4 +1,16 @@
 
+## Phases of Software Capabilities
+
+These are the areas of focus for development, with the graphics engine as the current one.
+
+```mermaid
+graph LR
+
+cg[Real Time\nGraphics]-->man[Manual\nData Entry]
+man-->db[Database\nInterfaces]
+db-->ml[Machine Learning\nGeometry]
+```
+
 ## Project Roadmap to MVP
 
 ``` mermaid
@@ -26,3 +38,5 @@ TODAY : 10% of Anatomy : Fly through the body : Graphics Engine Development : VR
 2027 : 60% of A&P : Data and Machine Learning Integration 
 2030 : Patient-specific Data : Device Integrations : Advanced simulation capabilities (Chemistry, Fluid dynamics, life cycles…)
 ```
+
+

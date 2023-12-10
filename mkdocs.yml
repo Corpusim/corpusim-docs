@@ -1,12 +1,13 @@
 nav:
     - Home: index.md
-    - Getting Started : getting-started.md
+    - Getting Started : getting_started.md
     - 'Contributors':
       - 'About Contributors' : 'contributors/about_contributors.md'
       - 'Tools and Processes' : 'contributors/tools_and_processes.md'
     - Roadmaps : roadmaps.md
     - 'Software Reference':
       - 'Design and Architecture' : 'software_reference/design_and_architecture.md'
+      - 'Graphics Engine' : 'software_reference/graphics_engine.md'
 
 theme:
   name: material
