@@ -9,6 +9,11 @@ nav:
 
 theme:
   name: material
+  logo: 'images/Logo_W.png'
+  palette:
+    scheme: slate
+    primary: brown
+    accent: deep_orange
 
 site_name: 'Corpusim Docs'
 repo_url: 'https://github.com/Corpusim/corpusim-docs'
