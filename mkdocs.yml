@@ -1,11 +1,12 @@
 nav:
     - Home: index.md
     - Getting Started : getting-started.md
-    - Roadmaps : roadmaps.md
     - 'Contributors':
       - 'About Contributors' : 'contributors/about_contributors.md'
-      - 'Design and Architecture' : 'contributors/design_and_architecture.md'
       - 'Tools and Processes' : 'contributors/tools_and_processes.md'
+    - Roadmaps : roadmaps.md
+    - 'Software Reference':
+      - 'Design and Architecture' : 'software_reference/design_and_architecture.md'
 
 theme:
   name: material
