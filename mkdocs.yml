@@ -1,11 +1,11 @@
-site_name: Corpusim Docs
-
-
 nav:
     - Home: index.md
     - Getting Started : getting-started.md
-    - Design and Architecture: design_and_architecture.md
-    - Roadmap : roadmap.md
+    - Roadmaps : roadmaps.md
+    - 'Contributors':
+      - 'About Contributors' : 'contributors/about_contributors.md'
+      - 'Design and Architecture' : 'contributors/design_and_architecture.md'
+      - 'Tools and Processes' : 'contributors/tools_and_processes.md'
 
 theme:
   name: material
@@ -14,6 +14,9 @@ site_name: 'Corpusim Docs'
 repo_url: 'https://github.com/Corpusim/corpusim-docs'
 repo_name: 'Corpusim Docs Repo'
 site_url: https://docs.corpusim.com
+
+plugins:
+ - git-revision-date
 
 markdown_extensions:
   - pymdownx.superfences:
