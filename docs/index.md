@@ -9,7 +9,7 @@ The Corpusim project is about an open source ecosystem of mission-aligned contri
 This documentation will help you use and build on Corpusim, the software. 
 
 - [Getting Started](getting_started.md)
-- Corpusim's [Design and Architecture](software_reference/design_and_architecture.md)
+- Corpusim's [Design and Architecture](design_and_architecture.md)
 - Corpusim's [roadmaps](roadmaps.md)
 
 

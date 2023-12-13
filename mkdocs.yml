@@ -5,9 +5,13 @@ nav:
       - 'About Contributors' : 'contributors/about_contributors.md'
       - 'Tools and Processes' : 'contributors/tools_and_processes.md'
     - Roadmaps : roadmaps.md
-    - 'Software Reference':
-      - 'Design and Architecture' : 'software_reference/design_and_architecture.md'
-      - 'Graphics Engine' : 'software_reference/graphics_engine.md'
+    - 'Developer Guide':
+      - 'Design and Architecture' : 'developer_guide/software_reference/design_and_architecture.md'
+      - 'Graphics Engine' : 'developer_guide/software_reference/graphics_engine.md'
+      - 'Software Reference':
+        - 'hierarch_data.gd' : 'developer_guide/software_reference/hierarch_data.md'
+
+
 
 theme:
   name: material
@@ -18,12 +22,14 @@ theme:
     accent: deep_orange
 
 site_name: 'Corpusim Docs'
-repo_url: 'https://github.com/Corpusim/corpusim-docs'
 repo_name: 'Corpusim Docs Repo'
 site_url: https://docs.corpusim.com
 
 plugins:
- - git-revision-date
+  - git-revision-date
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: plantuml
 
 markdown_extensions:
   - pymdownx.superfences:
