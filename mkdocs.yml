@@ -6,10 +6,10 @@ nav:
       - 'Tools and Processes' : 'contributors/tools_and_processes.md'
     - Roadmaps : roadmaps.md
     - 'Developer Guide':
-      - 'Design and Architecture' : 'developer_guide/software_reference/design_and_architecture.md'
-      - 'Graphics Engine' : 'developer_guide/software_reference/graphics_engine.md'
-      - 'Software Reference':
-        - 'hierarch_data.gd' : 'developer_guide/software_reference/hierarch_data.md'
+      - 'Design and Architecture' : 'developer_guide/design_and_architecture.md'
+      - 'Graphics Engine' : 'developer_guide/graphics_engine.md'
+      - 'Code Reference':
+        - 'hierarch_data.gd' : 'developer_guide/code_reference/hierarch_data.md'
 
 
 

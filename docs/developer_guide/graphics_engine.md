@@ -8,7 +8,7 @@ Implicit modeling, by contrast, creates a 3D object by defining functions that i
 
 |   |   |
 |---|---|
-|![](expl.png)|![](impl.png)|
+|![](images/expl.png)|![](images/impl.png)|
 |(a)|(b)|
 
 Figure 1. Implicit vs. explicit definition of a circle.
@@ -21,7 +21,7 @@ Signed Distance Functions (SDFs) describe geometry implicitly. Shapes are determ
 
 An SDF is a mathematical function that takes a 2D point as input and returns the signed distance from that point to the closest boundary of a shape. SDFs can generate a wide range of shapes and effects by distorting SDF coordinates (with noise, for example) or boolean operations.
 
-![](sdf-demo.png)
+![](images/sdf-demo.png)
 
 Figure 2. Screenshots of an online SDF demonstration.
 
@@ -45,7 +45,7 @@ As with 2D SDFs, boolean operations cost almost nothing in performance. That fun
 
 Figure 3 shows a recent screenshot of Corpusim’s prototype SDF engine. The top portion of every object has been sliced away with a boolean subtraction operation. The texture is created with noise applied at two octaves of fractal repetition. The open source repository for the graphics research prototype is online (Corpusim, “RDT SDF Engine”). 
 
-![](corpusim-sdf.png)
+![](images/corpusim-sdf.png)
 
 Figure 3. Screenshot of Corpusim’s prototype RDT SDF Engine.
 
