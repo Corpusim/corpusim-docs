@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://docs.corpusim.com/developer_guide/graphics_engine/">
       
       
+        <link rel="prev" href="../design_and_architecture/">
+      
+      
+        <link rel="next" href="../code_reference/hierarch_data/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Graphics engine - Corpusim Docs</title>
+        <title>Graphics Engine - Corpusim Docs</title>
       
     
     
@@ -103,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Graphics engine
+              Graphics Engine
             
           </span>
         </div>
@@ -301,19 +305,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -327,7 +333,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Developer Guide
@@ -341,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_reference/design_and_architecture.md" class="md-nav__link">
+      <a href="../design_and_architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -359,10 +365,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../software_reference/graphics_engine.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Graphics Engine
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -371,6 +395,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2d-sdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2D SDF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-sdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D SDF
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcg" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-driven-sdf-pcg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data-Driven SDF PCG
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -399,7 +477,7 @@
             
   
   <span class="md-ellipsis">
-    Software Reference
+    Code Reference
   </span>
   
 
@@ -409,7 +487,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
-            Software Reference
+            Code Reference
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -420,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_reference/hierarch_data.md" class="md-nav__link">
+      <a href="../code_reference/hierarch_data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +602,7 @@
                   
 
 
-  <h1>Graphics engine</h1>
+  <h1>Graphics Engine</h1>
 
 <p><em>This article is written to provide a general audience with a foundational understanding of the main graphical technique used in Corpusim.</em></p>
 <p>The standard graphics pipeline is a sequence of steps that a 3D object passes through to be rendered on a screen. The 3D object, called a mesh, is made of triangles defined by vertices and edges between them. This mesh is sent through a vertex shader (shader being a program that runs in a graphics card), that can manipulate each vertex. The mesh is then transformed into pixels, known as fragments, and sent to the fragment shader which calculates the color of each pixel. Finally, the fragments are blended together and sent to the frame buffer to be displayed on the screen.</p>
@@ -539,8 +617,8 @@
 </thead>
 <tbody>
 <tr>
-<td><img alt="" src="expl.png" /></td>
-<td><img alt="" src="impl.png" /></td>
+<td><img alt="" src="../images/expl.png" /></td>
+<td><img alt="" src="../images/impl.png" /></td>
 </tr>
 <tr>
 <td>(a)</td>
@@ -553,7 +631,7 @@
 <h3 id="2d-sdf">2D SDF</h3>
 <p>Signed Distance Functions (SDFs) describe geometry implicitly. Shapes are determined at render time, entirely in the fragment shader, using mathematical parameters in a ray tracing algorithm. Consequently, the geometric shape does not have a resolution; it can be accurately rendered at any scale. As an analogy, consider 2D rasterized vs. vector graphics.</p>
 <p>An SDF is a mathematical function that takes a 2D point as input and returns the signed distance from that point to the closest boundary of a shape. SDFs can generate a wide range of shapes and effects by distorting SDF coordinates (with noise, for example) or boolean operations.</p>
-<p><img alt="" src="sdf-demo.png" /></p>
+<p><img alt="" src="../images/sdf-demo.png" /></p>
 <p>Figure 2. Screenshots of an online SDF demonstration.</p>
 <p>In Figure 2, the gradient seen in (a) is the expression of distance to a position in the upper left; greater distance is more white. With a step function, we achieve the sharp boundary of (b). A boolean subtraction operation—cutting off a piece of the existing geometry—is shown at 1.5x (c) and 10x (d) magnification.</p>
 <p>Any level of magnification on any region of the shape maintains the highest visual fidelity due to the shape’s implicit definition. Boolean operations maintain this perfect resolution.</p>
@@ -564,7 +642,7 @@
 <p>A running example of 3D SDF shader code is available online.</p>
 <p>As with 2D SDFs, boolean operations cost almost nothing in performance. That functionality has great utility for Corpusim because the cutaway view is an essential element of anatomy study. </p>
 <p>Figure 3 shows a recent screenshot of Corpusim’s prototype SDF engine. The top portion of every object has been sliced away with a boolean subtraction operation. The texture is created with noise applied at two octaves of fractal repetition. The open source repository for the graphics research prototype is online (Corpusim, “RDT SDF Engine”). </p>
-<p><img alt="" src="corpusim-sdf.png" /></p>
+<p><img alt="" src="../images/corpusim-sdf.png" /></p>
 <p>Figure 3. Screenshot of Corpusim’s prototype RDT SDF Engine.</p>
 <h2 id="pcg">PCG</h2>
 <p>Fractals are a good starting point to understand procedural content generation (PCG).</p>

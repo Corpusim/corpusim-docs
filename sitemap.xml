@@ -41,12 +41,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.corpusim.com/developer_guide/shrink/</loc>
+         <loc>https://docs.corpusim.com/developer_guide/code_reference/hierarch_data/</loc>
          <lastmod>2023-12-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.corpusim.com/developer_guide/code_reference/hierarch_data/</loc>
+         <loc>https://docs.corpusim.com/developer_guide/code_reference/shrink/</loc>
          <lastmod>2023-12-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
