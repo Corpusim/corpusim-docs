@@ -626,7 +626,7 @@
 </tr>
 </tbody>
 </table>
-<p>Figure 1. Implicit vs. explicit definition of a circle.</p>
+<p>Figure 1. Explicit vs implicit definition of a circle.</p>
 <p>In the first experimental prototype for Corpusim’s graphics engine, prior to March 2022, the implicit model was converted to an explicitly defined mesh by using the marching cubes algorithm. That introduced performance problems due to the rapidly changing shapes present in human physiology, as well as the varying levels of detail required for meshes as magnification increased. The geomorphing technique was considered for resolving the latter problem, but ultimately a pure SDF rendering engine was chosen to succeed the first approach.</p>
 <h3 id="2d-sdf">2D SDF</h3>
 <p>Signed Distance Functions (SDFs) describe geometry implicitly. Shapes are determined at render time, entirely in the fragment shader, using mathematical parameters in a ray tracing algorithm. Consequently, the geometric shape does not have a resolution; it can be accurately rendered at any scale. As an analogy, consider 2D rasterized vs. vector graphics.</p>
